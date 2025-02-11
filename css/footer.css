@@ -1,0 +1,85 @@
+.f-inner {
+  display: flex;
+  flex-direction: column;
+  /* align-items: flex-start; */
+  /* margin-top: 120px; */
+  background: #b1c6d5;
+  position: absolute;
+  width: 100%;
+}
+
+.f-inner .tit {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* padding: 6rem 2rem; */
+}
+
+.f-inner .tit p {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  padding: 8rem;
+  font-size: 2.4rem;
+  color: #fff;
+  padding: 4rem 2rem;
+}
+.f-info {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 4rem 2rem;
+}
+.f-inner .txt {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* padding: 6rem 2rem; */
+}
+
+.f-inner .txt p {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  /* padding: 6rem; */
+  font-size: 2.4rem;
+  color: #fff;
+  padding: 0rem 1rem;
+}
+.number {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.p-icon {
+  display: flex;
+}
+.number .p-icon > a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.number .p-icon > a > img {
+  width: 3rem;
+}
+.mail {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.m-icon {
+  display: flex;
+}
+.mail .m-icon > a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.mail .m-icon > a > img {
+  width: 3rem;
+}

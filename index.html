@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PORTFOLIO</title>
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/footer.css">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/swiper-bundle.min.css">
+    <script rel="stylesheet" href="./js/jquery-3.7.1.js"></script>
+    <script src="./js/jquery-latest.min.js"></script>
+    <script rel="stylesheet" href="./js/swiper-bundle.min.js"></script>
+    <script type="text/javascript" src="./js/typed.js"></script>
+</head>
+
+<body>
+
+    <div id="wrap">
+        <header>
+            <div class="h-in">
+                <div class="menu">
+                    <p>PROFILE</p>
+                    <p>WORKS</p>
+                    <p>CONTACT</p>
+                </div>
+            </div>
+        </header>
+        <main>
+            <!-- <div class="image-container">
+                <img src="./img/bg_7.jpg" alt="Image">
+            </div> -->
+            <section class="sec01">
+                <div class="tit">
+                    <h2><span class="typed"></span></h2>
+                </div>
+                <script>
+                    $(".typed").typed({
+                        strings: ["PORTFOLIO"],
+                        typeSpeed: 150,
+                        cursorChar: '_',
+                    });
+                </script>
+            </section>
+            <section class="sec_bg">
+                <div class="scroll_container">
+                    <div class="image-container">
+                        <img src="./img/bg_7.jpg" alt="Image">
+                    </div>
+                </div>
+            </section>
+
+            <section class="sec02">
+
+                <div class="profile slide-top1">
+                    <!-- <div class="profile-tit">
+                        <h2>PROFILE </h2>
+                    </div> -->
+                    <div class="profile-detail">
+                        <div class="profile-left"></div>
+                        <div class="profile-right">
+                            <ul>
+                                <li class="porfile-info-box">
+                                    <a href="#"><span>ABOUT</span></a>
+                                    <div>
+                                        <P>1997.11.28</P>
+                                        <p>이그림</p>
+                                    </div>
+                                </li>
+                                <li class="porfile-info-box">
+                                    <a href="#"><span>EDUCATION</span></a>
+                                    <div>
+                                        <div class="date">
+                                            <P>
+                                                <span>
+                                                    2013.03~2016.02
+                                                </span>
+                                                <span>
+                                                    서울 구암 고등학교 졸업
+                                                </span>
+                                            </P>
+                                            <P>
+                                                <span>
+                                                    2016.03~2018.02
+                                                </span>
+                                                <span>
+                                                    신구 전문 대학교 섬유의상코디과 졸업
+                                                </span>
+                                            </P>
+                                            <p>
+                                                <span>2024.06~2024.11</span>
+                                                <span>
+                                                    신촌 하이미디어 아카데미<br>Figma 활용 UI/UX 반응형 웹디자인&웹퍼블리셔 과정 수료
+                                                </span>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="porfile-info-box">
+                                    <a href="#"><span>WORK</span></a>
+                                    <div>
+                                        <P>2023.09 ~ 2024.01 의류회사 MD</P>
+                                    </div>
+                                </li>
+                                <li class="porfile-box">
+                                    <a href="#"><span>SKIILS</span></a>
+                                    <div class="skills">
+                                        <div class="ps">
+                                            <div class="icon">
+                                                <a href="#">
+                                                    <img src="img/ps.png" alt="포토샵">
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="figma">
+                                            <div class="icon">
+                                                <img src="img/figma.png" alt="피그마">
+                                            </div>
+                                        </div>
+                                        <div class="html">
+                                            <div class="icon">
+                                                <img src="img/html.png" alt="에쳄텔">
+                                            </div>
+                                        </div>
+                                        <div class="css">
+                                            <div class="icon">
+                                                <img src="img/css.png" alt="css">
+                                            </div>
+                                        </div>
+                                        <div class="java">
+                                            <div class="icon">
+                                                <img src="img/js.png" alt="자바">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <script>
+                    document.addEventListener("scroll", function () {
+                        const slideTopElement = document.querySelector('.slide-top1');
+                        const elementTop = slideTopElement.getBoundingClientRect().top;
+                        const windowHeight = window.innerHeight;
+
+                        if (elementTop <= windowHeight * 0.8) { // 뷰포트 80% 위치에 도달했을 때
+                            slideTopElement.classList.add('show');
+                            document.removeEventListener("scroll", arguments.callee); // 한 번 실행 후 이벤트 제거
+                        }
+                    });
+                    $(document).ready(function () {
+                        // 이미지 요소 선택
+                        const image = $('.scroll_container');
+
+                        // 스크롤 이벤트 리스너 추가
+                        $(window).on('scroll', function () {
+                            // 현재 스크롤 위치
+                            const scrollY = $(window).scrollTop();
+
+                            // 이미지 확대/축소 애니메이션
+                            const scaleValue = 1 + scrollY * 0.00005;
+                            image.css({
+                                'transform': `scale(${scaleValue})`,
+                            });
+                        });
+                    });
+                </script>
+            </section>
+
+            <section class="sec03">
+                <div class="converse mockup-box slide-top2">
+                    <div class="inner">
+                        <div class="left">
+                            <div class="mockup">
+                                <img src="img/mock1.png" alt="컨버스 pc, tablet , mobile 캡쳐">
+                            </div>
+                        </div>
+                        <div class="right">
+                            <div class="tit">
+                                <!-- <h2>CONVERSE</h2> -->
+                                <img src="img/컨버스.png" alt="컨버스 로고">
+                            </div>
+                            <div class="info">
+                                <ul>
+                                    <li class="list1">
+                                        <a href="#"><span>TYPE</span></a>
+                                        <P>반응형 리디자인</P>
+                                    </li>
+                                    <li class="list2">
+                                        <a href="#"><span>PAGE</span></a>
+                                        <P>메인</P>
+                                    </li>
+                                    <li class="list3">
+                                        <a href="#"><span>TOOLS</span></a>
+                                        <P>Photoshop, CSS3, HTML5, JavaScript</P>
+                                    </li>
+                                    <li class="list4">
+                                        <a href="#"><span>WORK</span></a>
+                                        <P>개인작업 100%</P>
+                                    </li>
+                                </ul>
+                                <div class="button">
+                                    <div class="btn_box">
+                                        <a href="https://dlrmfla97.mycafe24.com/converse/index.html" target="_blank"
+                                            class="pc_btn">
+                                            <span>WEBSITE</span>
+                                        </a>
+                                    </div>
+                                    <div class="view_btn">
+                                        <a href="./img/컨버스상세.pdf" target="_blank">
+                                            <span>VIEW</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <script>
+                    document.addEventListener("scroll", function () {
+                        const slideTopElement = document.querySelector('.slide-top2');
+                        const elementTop = slideTopElement.getBoundingClientRect().top;
+                        const windowHeight = window.innerHeight;
+
+                        if (elementTop <= windowHeight * 0.8) { // 뷰포트 80% 위치에 도달했을 때
+                            slideTopElement.classList.add('show');
+                            document.removeEventListener("scroll", arguments.callee); // 한 번 실행 후 이벤트 제거
+                        }
+                    });
+                </script>
+            </section>
+            <section class="sec04">
+                <div class="l'occitane mockup-box slide-top3">
+                    <div class="inner">
+                        <div class="left">
+                            <div class="mockup"> <img src="img/mock2.png" alt="l'occitane pc, tablet , mobile 캡쳐">
+                            </div>
+                        </div>
+                        <div class="right">
+                            <div class="tit">
+                                <!-- <h2>L'OCCITANE</h2> -->
+                                <img src="img/록시땅.svg" alt="록시땅 로고">
+                            </div>
+                            <div class="info">
+                                <ul>
+                                    <li class="list01">
+                                        <a href="#"><span>TYPE</span></a>
+                                        <P>반응형 리디자인</P>
+                                    </li>
+                                    <li class="list02">
+                                        <a href="#"><span>PAGE</span></a>
+                                        <P>메인</P>
+                                    </li>
+                                    <li class="list03">
+                                        <a href="#"><span>TOOLS</span></a>
+                                        <P>Photoshop, CSS3, HTML5, JavaScript</P>
+                                    </li>
+                                    <li class="list04">
+                                        <a href="#"><span>WORK</span></a>
+                                        <p>개인작업 100%</p>
+                                    </li>
+                                </ul>
+                                <div class="button">
+                                    <div class="btn_box">
+                                        <a href="https://dlrmfla97.mycafe24.com/loccietean/index.html" target="_blank"
+                                            class="pc_btn">
+                                            <span>WEBSITE</span>
+                                        </a>
+                                    </div>
+                                    <div class="view_btn">
+                                        <a href="./img/록시땅상세.pdf" target="_blank">
+                                            <span>VIEW</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <script>
+                    document.addEventListener("scroll", function () {
+                        const slideTopElement = document.querySelector('.slide-top3');
+                        const elementTop = slideTopElement.getBoundingClientRect().top;
+                        const windowHeight = window.innerHeight;
+
+                        if (elementTop <= windowHeight * 0.8) { // 뷰포트 80% 위치에 도달했을 때
+                            slideTopElement.classList.add('show');
+                            document.removeEventListener("scroll", arguments.callee); // 한 번 실행 후 이벤트 제거
+                        }
+                    });
+                </script>
+            </section>
+            <section class="sec05">
+                <div class="orlic mockup-box slide-top4">
+                    <div class="inner">
+                        <div class="left">
+                            <div class="mockup"> <img src="img/mock3.png" alt="ORLIC pc, tablet , mobile 캡쳐">
+                            </div>
+                        </div>
+                        <div class="right">
+                            <div class="tit">
+                                <!-- <h2>ORLIC</h2> -->
+                                <img src="img/올릭.png" alt="록시땅 로고">
+                            </div>
+                            <div class="info">
+                                <ul>
+                                    <li class="list1">
+                                        <a href="#"><span>TYPE</span></a>
+                                        <P>반응형 클론디자인</P>
+                                    </li>
+                                    <li class="list2">
+                                        <a href="#"><span>PAGE</span></a>
+                                        <p>메인</p>
+                                    </li>
+                                    <li class="list3">
+                                        <a href="#"><span>TOOLS</span></a>
+                                        <P>Photoshop, CSS3, HTML5, JavaScript</P>
+                                    </li>
+                                    <li class="list4">
+                                        <a href="#"><span>WORK</span></a>
+                                        <P>개인작업 100%</P>
+                                    </li>
+                                </ul>
+                                <div class="button">
+                                    <div class="btn_box">
+                                        <a href="https://dlrmfla97.mycafe24.com/orlic/index.html" target="_blank"
+                                            class="pc_btn">
+                                            <span>WEBSITE</span>
+                                        </a>
+                                    </div>
+                                    <!-- <div class="view_btn">
+                                        <a href="#" class="detail_btn">
+                                            <span>VIEW</span>
+                                        </a>
+                                    </div> -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <script>
+                    document.addEventListener("scroll", function () {
+                        const slideTopElement = document.querySelector('.slide-top4');
+                        const elementTop = slideTopElement.getBoundingClientRect().top;
+                        const windowHeight = window.innerHeight;
+
+                        if (elementTop <= windowHeight * 0.8) { // 뷰포트 80% 위치에 도달했을 때
+                            slideTopElement.classList.add('show');
+                            document.removeEventListener("scroll", arguments.callee); // 한 번 실행 후 이벤트 제거
+                        }
+                    });
+                </script>
+            </section>
+        </main>
+        <footer>
+            <section class="f-inner">
+                <div class="tit">
+                    <p>CONTACT ME</p>
+                </div>
+                <div class="f-info">
+                    <div class="number">
+                        <div class="p-icon">
+                            <a href="#">
+                                <img src="img/phone.png" alt="폰">
+                            </a>
+                            <div class="txt">
+                                <p>010-5011-1755</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mail">
+                        <div class="m-icon">
+                            <a href="#">
+                                <img src="img/mail.png" alt="이메일">
+                            </a>
+                            <div class="txt">
+                                <p>dlrmfla971128@naver.com</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </footer>
+    </div>
+</body>
+
+</html>
